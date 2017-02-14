@@ -3,9 +3,15 @@
     "description": "Sophisticated, lightweight & simple CMS",
     "type": "project",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/intendit/bolt"
+        }
+    ],
     "require": {
         "php": "^5.5.9 || ^7.0",
-        "bolt/bolt": "^3.2",
+        "bolt/bolt": "3.2.x-dev",
         "passwordlib/passwordlib": "^1.0@beta"
     },
     "minimum-stability": "beta",

@@ -1,9 +1,8 @@
-### Bolt Installer for Composer
+### Bolt Installer for Composer (Intendit)
 
-To start the install just run the following command replacing the project with
-the name you want to use.
+To start the install just clone and then run
 
-`composer create-project bolt/composer-install:^3.2 <MYPROJECT> --prefer-dist`
+`composer install --prefer-source`
 
 
 After the packages have downloaded, you can choose whether you would like a

@@ -1,0 +1,70 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Composer\\EventListener\\": "../vendor/bolt/bolt/src/Composer/EventListener"
+        }
+    },
+    "config": {
+        "discard-changes": true,
+        "preferred-install": "dist"
+    },
+    "description": "Bolt extension installation interface",
+    "extra": {
+        "bolt-web-path": "../public",
+        "bolt-root-path": "..",
+        "merge-plugin": {
+            "include": [
+                "local/*/*/composer.json"
+            ]
+        }
+    },
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "name": "bolt/extensions",
+    "prefer-stable": true,
+    "provide": {
+        "bolt/bolt": "3.2.7"
+    },
+    "repositories": {
+        "packagist": false,
+        "bolt": {
+            "type": "composer",
+            "url": "https://market.bolt.cm/satis/"
+        }
+    },
+    "require": {
+        "animal/translate": "^4.0",
+        "bacboslab/menueditor": "^3.1",
+        "bobdenotter/archives": "^1.0",
+        "bobdenotter/gridfield": "^1.0",
+        "bobdenotter/seo": "^0.12.1",
+        "bolt/basewidget": "^0.9.0",
+        "bolt/boltforms": "^3.1",
+        "bolt/googleanalytics": "^2.0",
+        "bolt/labels": "^3.0",
+        "bolt/members": "^3.0@beta",
+        "bolt/rssfeed": "^3.1",
+        "bolt/sitemap": "^2.0",
+        "cnd/relationlist": "^2.0",
+        "designspike/menuchain": "^2.0",
+        "jadwigo/taxonomylist": "^3.1",
+        "raistlfiren/faiconfieldtype": "^3.4",
+        "sahassar/boltredirector": "^2.0",
+        "sahassar/bootstrapcolorpicker": "^1.0",
+        "sahassar/dragsort": "^0.1.2",
+        "sahassar/editcontentcustomtabs": "^1.0",
+        "sahassar/extras": "^2.0",
+        "sahassar/facebookembeds": "^2.0",
+        "sahassar/fontawesomehelper": "^0.2.0",
+        "sahassar/gmaps": "^4.0",
+        "sahassar/postcss": "^1.0",
+        "sahassar/twitterembeds": "^2.0",
+        "wikimedia/composer-merge-plugin": "^1.3",
+        "xiaohutai/bolt-relatedcontentbytags": "^3.0"
+    },
+    "scripts": {
+        "post-autoload-dump": "Bolt\\Composer\\EventListener\\PackageEventListener::dump",
+        "post-package-install": "Bolt\\Composer\\EventListener\\PackageEventListener::handle",
+        "post-package-update": "Bolt\\Composer\\EventListener\\PackageEventListener::handle"
+    }
+}

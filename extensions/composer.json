@@ -30,9 +30,19 @@
         "bolt": {
             "type": "composer",
             "url": "https://market.bolt.cm/satis/"
+        },
+        "IntenditExtras": {
+            "type": "vcs",
+            "url": "https://github.com/Intendit/IntenditExtension"
+        },
+        "bolt-stripe": {
+            "type": "vcs",
+            "url": "https://github.com/SahAssar/bolt-stripe"
         }
     },
     "require": {
+        "intendit/IntenditExtras": "dev-master",
+        "sahassar/boltstripe": "dev-master",
         "animal/translate": "^4.0",
         "bacboslab/menueditor": "^3.1",
         "bobdenotter/archives": "^1.0",

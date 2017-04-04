@@ -19,11 +19,11 @@
         }
     },
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "name": "bolt/extensions",
     "prefer-stable": true,
     "provide": {
-        "bolt/bolt": "3.2.7"
+        "bolt/bolt": "3.2.8"
     },
     "repositories": {
         "packagist": false,
@@ -38,6 +38,10 @@
         "bolt-stripe": {
             "type": "vcs",
             "url": "https://github.com/SahAssar/bolt-stripe"
+        },
+        "Members": {
+            "type": "vcs",
+            "url": "https://github.com/BoltAuth/Auth"
         }
     },
     "require": {
@@ -67,10 +71,11 @@
         "sahassar/facebookembeds": "^2.0",
         "sahassar/fontawesomehelper": "^0.2.0",
         "sahassar/gmaps": "^4.0",
-        "sahassar/postcss": "^1.0",
+        "sahassar/postcss": "^3.0",
         "sahassar/twitterembeds": "^2.0",
         "wikimedia/composer-merge-plugin": "^1.3",
-        "xiaohutai/bolt-relatedcontentbytags": "^3.0"
+        "xiaohutai/bolt-relatedcontentbytags": "^3.0",
+        "sahassar/internationalslugs": "^1.0"
     },
     "scripts": {
         "post-autoload-dump": "Bolt\\Composer\\EventListener\\PackageEventListener::dump",

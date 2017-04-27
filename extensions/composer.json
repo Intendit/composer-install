@@ -23,13 +23,13 @@
     "name": "bolt/extensions",
     "prefer-stable": true,
     "provide": {
-        "bolt/bolt": "3.2.8"
+        "bolt/bolt": "3.2.11"
     },
     "repositories": {
         "packagist": false,
         "bolt": {
             "type": "composer",
-            "url": "https://market.bolt.cm/satis/"
+            "url": "https://extensions.bolt.cm/satis/"
         },
         "IntenditExtras": {
             "type": "vcs",
@@ -39,6 +39,10 @@
             "type": "vcs",
             "url": "https://github.com/SahAssar/bolt-stripe"
         },
+        "remoteimage": {
+            "type": "vcs",
+            "url": "https://github.com/SahAssar/bolt-remoteimage"
+        },
         "Members": {
             "type": "vcs",
             "url": "https://github.com/BoltAuth/Auth"
@@ -47,6 +51,9 @@
     "require": {
         "intendit/IntenditExtras": "dev-master",
         "sahassar/boltstripe": "dev-master",
+        "sahassar/remoteimage": "dev-master",
+        "sahassar/memberfields": "dev-master",
+        "bolt/members": "dev-translations",
         "animal/translate": "^4.0",
         "bacboslab/menueditor": "^3.1",
         "bobdenotter/archives": "^1.0",
@@ -56,7 +63,6 @@
         "bolt/boltforms": "^3.1",
         "bolt/googleanalytics": "^2.0",
         "bolt/labels": "^3.0",
-        "bolt/members": "^3.0@beta",
         "bolt/rssfeed": "^3.1",
         "bolt/sitemap": "^2.0",
         "cnd/relationlist": "^2.0",
@@ -75,7 +81,8 @@
         "sahassar/twitterembeds": "^2.0",
         "wikimedia/composer-merge-plugin": "^1.3",
         "xiaohutai/bolt-relatedcontentbytags": "^3.0",
-        "sahassar/internationalslugs": "^1.0"
+        "sahassar/internationalslugs": "^1.0",
+        "soapbox/taxonomyeditor": "^0.2"
     },
     "scripts": {
         "post-autoload-dump": "Bolt\\Composer\\EventListener\\PackageEventListener::dump",

@@ -37,7 +37,7 @@
         },
         "bolt-stripe": {
             "type": "vcs",
-            "url": "https://github.com/SahAssar/bolt-stripe"
+            "url": "https://github.com/Intendit/bolt-stripe"
         },
         "remoteimage": {
             "type": "vcs",

@@ -7,3 +7,5 @@ To start the install just clone and then run
 
 After the packages have downloaded, you can choose whether you would like a
 separate public directory and if so choose a name.
+
+- Santino test

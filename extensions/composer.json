@@ -38,11 +38,24 @@
        "remoteimage": {
              "type": "vcs",
              "url": "https://github.com/SahAssar/bolt-remoteimage"
-        }            
+        },
+       "bolt-openagenda": {
+             "type": "vcs",
+             "url": "https://github.com/nbehier/bolt-openagenda"
+        },
+        "Members": {
+            "type": "vcs",
+            "url": "https://github.com/Intendit/Members"
+        },
+        "jsonapi": {
+            "type": "vcs",
+            "url": "https://github.com/xiaohutai/jsonapi"
+        }
     },
     "require": {
         "intendit/IntenditExtras": "dev-master",
         "animal/translate": "^4.0",
+        "bolt/members": "dev-translations",
         "bacboslab/menueditor": "^3.1",
         "bobdenotter/archives": "^1.0",
         "bobdenotter/gridfield": "^1.0",
@@ -56,6 +69,7 @@
         "cnd/relationlist": "^2.0",
         "designspike/menuchain": "^2.0",
         "jadwigo/taxonomylist": "^3.1",
+        "leskis/bolt-openagenda": "master",
         "raistlfiren/faiconfieldtype": "^3.4",
         "sahassar/boltredirector": "^2.0",
         "sahassar/remoteimage": "dev-master",
@@ -71,6 +85,7 @@
         "soapbox/taxonomyeditor": "^0.2",
         "wikimedia/composer-merge-plugin": "^1.3",
         "xiaohutai/bolt-relatedcontentbytags": "^3.0",
+        "bolt/jsonapi": "dev-master",
         "sahassar/internationalslugs": "^1.0",
         "zomars/instagram": "dev-master"
     },
